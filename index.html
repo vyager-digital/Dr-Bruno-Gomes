@@ -87,6 +87,7 @@ nav.scrolled{background:rgba(8,12,14,.96);backdrop-filter:blur(20px);padding:14p
 .sec-audience{padding:120px 0;background:var(--dark)}
 .aud-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:52px;border-radius:4px;overflow:hidden}
 .aud-card{position:relative;background:var(--dark-2);padding:56px 44px;overflow:hidden;transition:background .3s}
+.aud-card .aud-bnum,.aud-card .aud-pre,.aud-card .aud-title,.aud-card .aud-desc,.aud-card .check-list,.aud-card .aud-link{position:relative;z-index:2}
 .aud-card:hover{background:var(--dark-3)}
 .aud-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue);transform:scaleX(0);transition:transform .3s;transform-origin:left}
 .aud-card:hover::after{transform:scaleX(1)}
@@ -237,10 +238,10 @@ footer{border-top:1px solid var(--border);padding:60px 0 36px;background:var(--d
       <a href="#final" class="btn-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Agendar Avaliação Gratuita pelo WhatsApp</a>
       <a href="#sobre" class="btn-out">Conhecer o Dr. Bruno</a>
     </div>
-    <div class="hero-stats reveal">
-      <div><div class="stat-num">2k<span>+</span></div><div class="stat-lbl">Pacientes</div></div>
-      <div><div class="stat-num">15<span>+</span></div><div class="stat-lbl">Anos Exp.</div></div>
-      <div><div class="stat-num">5<span>★</span></div><div class="stat-lbl">Doctoralia</div></div>
+    <div class="hero-stats reveal" style="padding-top:36px;border-top:1px solid var(--border);display:flex;flex-direction:column;align-items:flex-start;gap:6px">
+      <div style="color:#FFB800;font-size:22px;letter-spacing:3px">★★★★★</div>
+      <span style="font-size:13px;color:var(--off);font-weight:300">Opiniões reais de pacientes</span>
+      <img src="https://vyager.com.br/wp-content/uploads/2026/02/Logo_secundario-scaled.png" alt="Doctoralia" style="height:22px;width:auto;object-fit:contain;display:block">
     </div>
   </div>
   <div class="hero-right">
@@ -263,23 +264,19 @@ footer{border-top:1px solid var(--border);padding:60px 0 36px;background:var(--d
   <div class="ticker-item"><span class="tdot"></span>Cardiologia</div>
   <div class="ticker-item"><span class="tdot"></span>Nutrologia</div>
   <div class="ticker-item"><span class="tdot"></span>Medicina Esportiva</div>
-  <div class="ticker-item"><span class="tdot"></span>Hospital Albert Einstein</div>
-  <div class="ticker-item"><span class="tdot"></span>Farmacologia Clínica</div>
-  <div class="ticker-item"><span class="tdot"></span>Universidade Federal Fluminense</div>
   <div class="ticker-item"><span class="tdot"></span>Emagrecimento com Ciência</div>
+  <div class="ticker-item"><span class="tdot"></span>Saúde Cardiovascular</div>
   <div class="ticker-item"><span class="tdot"></span>Performance de Elite</div>
-  <div class="ticker-item"><span class="tdot"></span>iDOMED</div>
-  <div class="ticker-item"><span class="tdot"></span>Niterói &amp; Barra da Tijuca</div>
+  <div class="ticker-item"><span class="tdot"></span>Protocolos Personalizados</div>
+  <div class="ticker-item"><span class="tdot"></span>Farmacologia Clínica</div>
   <div class="ticker-item"><span class="tdot"></span>Cardiologia</div>
   <div class="ticker-item"><span class="tdot"></span>Nutrologia</div>
   <div class="ticker-item"><span class="tdot"></span>Medicina Esportiva</div>
-  <div class="ticker-item"><span class="tdot"></span>Hospital Albert Einstein</div>
-  <div class="ticker-item"><span class="tdot"></span>Farmacologia Clínica</div>
-  <div class="ticker-item"><span class="tdot"></span>Universidade Federal Fluminense</div>
   <div class="ticker-item"><span class="tdot"></span>Emagrecimento com Ciência</div>
+  <div class="ticker-item"><span class="tdot"></span>Saúde Cardiovascular</div>
   <div class="ticker-item"><span class="tdot"></span>Performance de Elite</div>
-  <div class="ticker-item"><span class="tdot"></span>iDOMED</div>
-  <div class="ticker-item"><span class="tdot"></span>Niterói &amp; Barra da Tijuca</div>
+  <div class="ticker-item"><span class="tdot"></span>Protocolos Personalizados</div>
+  <div class="ticker-item"><span class="tdot"></span>Farmacologia Clínica</div>
 </div></div>
 
 <section class="sec-audience">
@@ -287,7 +284,8 @@ footer{border-top:1px solid var(--border);padding:60px 0 36px;background:var(--d
   <div class="sec-label reveal"><span class="sec-bar"></span><span class="sec-txt">Para quem é este tratamento?</span></div>
   <h2 class="hdl reveal d1" style="margin-bottom:52px">Dois objetivos,<br><span class="blue">uma ciência</span></h2>
   <div class="aud-grid reveal d2">
-    <div class="aud-card">
+    <div class="aud-card" style="background-image:url('https://vyager.com.br/wp-content/uploads/2026/02/photo-1517649763962-0c623066013b-2.avif');background-size:cover;background-position:center top;">
+      <div style="position:absolute;inset:0;background:rgba(8,12,14,0.78);z-index:1"></div>
       <span class="aud-bnum">01</span>
       <div class="aud-pre">Para quem quer emagrecer</div>
       <h3 class="aud-title">Chega de dieta.<br>Começa a ciência.</h3>
@@ -300,7 +298,8 @@ footer{border-top:1px solid var(--border);padding:60px 0 36px;background:var(--d
       </ul>
       <a href="#final" class="aud-link">Iniciar meu protocolo <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></a>
     </div>
-    <div class="aud-card">
+    <div class="aud-card" style="background-image:url('https://vyager.com.br/wp-content/uploads/2026/02/photo-1541534741688-6078c6bfb5c5-1.avif');background-size:cover;background-position:center top;">
+      <div style="position:absolute;inset:0;background:rgba(8,12,14,0.78);z-index:1"></div>
       <span class="aud-bnum">02</span>
       <div class="aud-pre">Para atletas e esportistas</div>
       <h3 class="aud-title">Performance começa<br>no que você come.</h3>
@@ -368,7 +367,14 @@ footer{border-top:1px solid var(--border);padding:60px 0 36px;background:var(--d
       <div class="sec-label" style="margin-bottom:16px"><span class="sec-bar"></span><span class="sec-txt">Avaliações reais</span></div>
       <h2 class="hdl">O que dizem os <span class="blue">pacientes</span></h2>
     </div>
-    <div class="doc-pill"><div class="doc-stars">★★★★★</div><div><div class="doc-score">5.0 Excelente</div><div class="doc-label">Doctoralia · +200 avaliações</div></div></div>
+    <div class="doc-pill">
+      <div class="doc-stars">★★★★★</div>
+      <div>
+        <div class="doc-score">Excelente</div>
+        <div class="doc-label">Opiniões reais de pacientes</div>
+        <img src="https://vyager.com.br/wp-content/uploads/2026/02/Logo_secundario-scaled.png" alt="Doctoralia" style="height:16px;width:auto;object-fit:contain;display:block;margin-top:4px">
+      </div>
+    </div>
   </div>
   <div class="rev-grid reveal d1">
     <div class="rev-card"><div class="rev-q">"</div><p class="rev-text">A consulta inicial dura pelo menos 2 horas. O atendimento foi muito detalhado — fica claro que ele conhece profundamente todas as disciplinas envolvidas. Excelente!</p><div class="rev-author"><div class="rev-av">R</div><div><div class="rev-name">Regina L.</div><div class="rev-stars">★★★★★</div></div></div></div>
