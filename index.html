@@ -87,8 +87,11 @@ nav.scrolled{background:rgba(8,12,14,.96);backdrop-filter:blur(20px);padding:14p
 /* AUDIENCE */
 .sec-audience{padding:120px 0;background:var(--dark)}
 .aud-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:52px;border-radius:4px;overflow:hidden}
-.aud-card{position:relative;background:var(--dark-2);padding:56px 44px;overflow:hidden;transition:background .3s}
+.aud-card{position:relative;background:var(--dark-2);padding:56px 44px;overflow:hidden;transition:background .3s;display:flex;flex-direction:column}
 .aud-card .aud-bnum,.aud-card .aud-pre,.aud-card .aud-title,.aud-card .aud-desc,.aud-card .check-list,.aud-card .aud-link{position:relative;z-index:2}
+.aud-card .aud-title{flex:0 0 auto;min-height:4.2em}
+.aud-card .aud-desc{flex:0 0 auto;min-height:5em}
+.aud-card .check-list{flex:1}
 .aud-card:hover{background:var(--dark-3)}
 .aud-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--blue);transform:scaleX(0);transition:transform .3s;transform-origin:left}
 .aud-card:hover::after{transform:scaleX(1)}
@@ -428,7 +431,7 @@ footer{border-top:1px solid var(--border);padding:60px 0 36px;background:var(--d
     <div><div class="f-col-lbl">Niterói</div><div class="f-addr"><strong>Icaraí</strong>Rua Ator Paulo Gustavo, 229<br>Sala 1615 · Icaraí<br>CEP 24230-051</div></div>
     <div><div class="f-col-lbl">Rio de Janeiro</div><div class="f-addr"><strong>Barra da Tijuca</strong>Av. João Cabral de Mello Neto, 850<br>10º andar<br>CEP 22775-057</div></div>
   </div>
-  <div class="footer-bot"><span class="f-copy">© 2026 Dr. Bruno Gomes. Todos os direitos reservados.</span><div class="f-links"><a href="#">Política de Privacidade</a><a href="#">Termos de Uso</a></div></div>
+  <div class="footer-bot"><span class="f-copy">© 2025 Dr. Bruno Gomes. Todos os direitos reservados.</span><div class="f-links"><a href="#">Política de Privacidade</a><a href="#">Termos de Uso</a></div></div>
 </div>
 </footer>
 
